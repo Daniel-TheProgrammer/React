@@ -1,0 +1,242 @@
+
+*{
+    margin:0;
+}
+
+body{
+    max-height:100vh;
+    max-width:100vw;
+    overflow:hidden;
+}
+
+.loader{
+    position:absolute;
+    top:40%;
+    left:40%;
+    transform:translate (-50%, -50%);
+    width:70px;
+    display:flex;
+}
+#load{
+    background:#09b7bf;
+    width:100%;height:100%;
+    position:fixed;top:0;left:0;
+}
+.loader span{
+    width:15px;
+    height:80px;
+    background:white;
+    margin:0px 1px;
+    animation:loading 1000ms ease-in-out infinite;
+}
+.loader span:nth-child(1){   
+    animation-delay:-900ms;
+}
+.loader span:nth-child(2){    
+    animation-delay:-800ms;
+}
+.loader span:nth-child(3){    
+    animation-delay:-700ms;
+}
+.loader span:nth-child(4){    
+    animation-delay:-600ms;
+}
+.loader span:nth-child(5){    
+    animation-delay:-500ms;
+}
+.loader span:nth-child(6){   
+    animation-delay:-400ms;
+}
+.loader span:nth-child(7){    
+    animation-delay:-300ms;
+}
+.loader span:nth-child(8){    
+    animation-delay:-200ms;
+}
+.loader span:nth-child(9){    
+    animation-delay:-100ms;
+}    
+@keyframes loading{
+    0%, 60%, 100%{
+        transform:scaleY(0.01);
+    }
+    35%{
+        transform:scale(1);
+    }
+}
+
+
+.app{
+    width:100wh;
+    height:100vh;
+}
+.swiper-container {
+      width: 100%;
+      height: calc(100% - 60px);
+      //margin-top:10px; 
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      
+}
+
+ .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;    
+}
+.footer{
+    margin:0;
+    height:40px;
+    background:#efefefef;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.footer span{
+    padding:10px 35px;
+    background:#fff;
+    border-radius:10px;
+    cursor:pointer;
+}
+.header{
+    background:#000;
+    height:20px;
+    color:#fff;
+}
+.batteryLevel{
+    font-size:10px;
+    margin:0px 5px;
+}
+.battery{
+    float:right;
+    display:flex;
+    align-items:center;
+    margin-top:3px;
+}
+
+
+.left-side{
+    font-size:11px;
+}
+.net-speed{
+    font-size:8px;
+    margin-left:5px;
+}
+
+
+
+
+
+
+
+h2{
+    text-align:center;
+}
+.Link{
+    text-decoration:none;
+    color:#000; 
+}
+.swiper-slide span{
+    font-size:3em;
+    padding:20px;
+    cursor:pointer;
+}
+
+.swiper-slide .fa-whatsapp{
+    color:#25d366;
+}
+.swiper-slide .fa-facebook{
+    color:#4b6cb7;
+}
+.swiper-slide .fa-play{
+   background:red;padding:15px 30px;
+   color:#fff;font-size:1em;
+   border-radius:8px;
+}
+.swiper-slide .fa-calculator{
+    color:#cc0066;
+}
+.swiper-slide .fa-cogs{
+    color:tomato;
+}
+
+
+
+/*Calculator App*/
+
+.calc_con{
+    width:80%;
+    background:#e8e8e8;
+    padding:10px;
+    display:grid;
+    place-items:center;
+    border-radius:5px;
+    padding:10px 5px;
+}
+.calc_con input{
+    margin-top:4px;
+    display:block;outline:none;
+    background:#fff;height:40px;
+    width:94%;border:none;text-align:right;
+    box-shadow:0px 2px 2px rgba(0,0,0,0.2);
+    padding:0 2%;
+}
+.calc_con .btns{
+    margin-top:5px;
+    display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;    
+    flex-direction:column;
+}
+.calc_con .btns button{
+    width:70px;height:30px;
+    margin:2px;background:#4488ff;
+    color:#fff;outline:none;border:none;
+}
+
+.calc_con .btns button:active{
+    opacity:0.8;
+    background:rgba(0,0,0,0.8);
+}
+
+
+.sololearn,.flipkart,.glitch,.chrome{
+    width:50px;
+    padding:20px;
+    cursor:pointer;
+}
+iframe{
+    width:100%;height:100%;
+}
